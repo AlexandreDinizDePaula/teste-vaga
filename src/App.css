@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+.header{
+    overflow: hidden;
+    background-color: #1980b4;
+    padding: 20px 10px;
+    text-align: center;
+}
+.header h1{
+    color: white;
+    font-size: 24px;    
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*BODY*/
+.body-container{
+   
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    
+}
+.project{
+    background-color: white;
+    margin: 40px 20px 30px 20px;
+    padding: 30px;
+    box-shadow: 1px 1px 1px 1px rgb(99, 99, 99);
+}
+.cases{
+    display: flex;
+    margin-bottom: 40px;
+}
+.cases li{
+    color: white;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+    list-style: none;
+    margin-left: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 0px rgb(99, 99, 99);
+}
+.cases-item-confirmed{
+    background-color: #007bff;
+}
+.cases-item-recovered{
+    background-color: #28a745;
+}
+.cases-item-deaths{
+    background-color: #dc3545;
+}
+.ranking
+{
+    background-color: #ffc107;
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    list-style: none;
+    margin-left: 30px;
+    padding: 30px;
+    box-shadow: 1px 1px 1px 0px rgb(99, 99, 99);
+}
+.ranking-title{
+    margin-bottom: 30px;
+}
+.ranking li{
+    text-align: left;
+    margin-top: 15px;
+    list-style: none;
+}
+/*FOOTER*/
+footer{
+    clear: both;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #1980b4;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+footer p{
+    
+    font-size: 12px;
+    font-weight: bold;
+}
+  
+@media screen and (max-width: 480px){
+    /*HEADER Mobile*/
+    .main{
+        flex-direction: column;
+    }
+    .cases li{
+            font-size: 16px;
+    }
+    .ranking{
+        margin: 20px;
+    }
+}
+    
+@media screen and (min-width: 481px) and (max-width: 768px){
+     /*HEADER Small Desktop*/
+   .main{
+    flex-direction: column;
+    }
+    .cases li{
+        font-size: 20px;
+    }
+    .ranking{
+        margin: 20px;
+    }
+}
+    
+@media screen and (min-width: 769px) and (max-width: 1199px){
+    /*HEADER Small Desktop*/
+   .main{
+        flex-direction: column;
+   }
+   .cases li{
+       font-size: 24px;
+   }
+   .ranking{
+    margin: 20px;
+}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    
+    
